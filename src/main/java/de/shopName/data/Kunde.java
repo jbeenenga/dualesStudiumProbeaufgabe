@@ -45,4 +45,10 @@ public class Kunde {
     public void setKundennummer(int kundennummer) {
         this.kundennummer = kundennummer;
     }
+
+    @Override
+    public String toString() {
+        return "Kunde{" + "kundennummer=" + kundennummer  + ", vorname='" + vorname + '\'' + ", nachname='"
+                + nachname + '\'' + ", email='" + email + '\'' + '}';
+    }
 }
