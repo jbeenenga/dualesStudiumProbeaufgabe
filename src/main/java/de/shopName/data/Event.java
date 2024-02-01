@@ -7,11 +7,11 @@ public class Event {
     private int eventNummer;
     private  String name;
     private String ort;
-    private Date datum;
+    private String datum;
 
     private int anzahlTickets;
 
-    public Event(int eventNummer, String name, String ort, Date datum, int anzahlTickets) {
+    public Event(int eventNummer, String name, String ort, String datum, int anzahlTickets) {
         this.eventNummer = eventNummer;
         this.name = name;
         this.ort = ort;
@@ -43,11 +43,11 @@ public class Event {
         this.ort = ort;
     }
 
-    public Date getDatum() {
+    public String getDatum() {
         return datum;
     }
 
-    public void setDatum(Date datum) {
+    public void setDatum(String datum) {
         this.datum = datum;
     }
 
