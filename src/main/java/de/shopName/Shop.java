@@ -3,13 +3,13 @@ package de.shopName;
 import java.util.Scanner;
 
 public class Shop {
-
+    static Scanner scan;
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        zeigeWillkommensMenue(scan);
+        scan = new Scanner(System.in);
+        zeigeWillkommensMenue();
     }
 
-    private static void zeigeWillkommensMenue(Scanner scan) {
+    private static void zeigeWillkommensMenue() {
         while (true) {
             System.out
                     .println("Willkommen im Shop. Was wollen Sie tun (K (Kundenanlage), E (Eventanlage),B (Buchung)):");
@@ -17,13 +17,13 @@ public class Shop {
 
             switch (antwort) {
                 case "K":
-                    starteKundenanlage(scan);
+                    starteKundenanlage();
                     break;
                 case "E":
-                    starteEventanlage(scan);
+                    starteEventanlage();
                     break;
                 case "B":
-                    starteBuchung(scan);
+                    starteBuchung();
                     break;
                 default:
                     System.out.println("Die gewählte Funktion ist nicht verfügbar.");
@@ -31,15 +31,15 @@ public class Shop {
         }
     }
 
-    private static void starteBuchung(Scanner scan) {
+    private static void starteBuchung() {
         System.out.println("Buchung wurde gestartet");
     }
 
-    private static void starteEventanlage(Scanner scan) {
+    private static void starteEventanlage() {
         System.out.println("Eventanlage wurde gestartet");
     }
 
-    private static void starteKundenanlage(Scanner scan) {
+    private static void starteKundenanlage() {
         System.out.println("Kundenanlage wurde gestartet");
     }
 }
